@@ -1,0 +1,13 @@
+server:
+  port: 8079
+spring:
+  application:
+    name: delivery-eureka-server
+  cloud:
+    config:
+      profile: native
+      uri: http://localhost:8888
+eureka:
+  client:
+    fetchRegistry: false
+    registerWithEureka: false
